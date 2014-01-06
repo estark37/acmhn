@@ -1,0 +1,26 @@
+<head>
+  <title>A HackerNews clone</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <h3>HackerNews</h3>
+    </div>
+    {{> stories}}
+  </div>
+</body>
+
+<template name="stories">
+  {{#each stories}}
+  <div class="row">
+    {{>story}}
+  </div>
+  {{/each}}
+</template>
+
+<template name="story">
+  <a href="{{link}}">
+    {{title}}
+  </a>
+</template>
