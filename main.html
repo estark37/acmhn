@@ -5,18 +5,20 @@
 <body>
   <div class="container">
     <div class="row">
-      <h3>HackerNews</h3>
+      <h3>Hacker News</h3>
     </div>
     {{> stories}}
   </div>
 </body>
 
 <template name="stories">
+  <ol>
   {{#each stories}}
-  <div class="row">
-    {{>story}}
-  </div>
+    <li>
+      {{>story}}
+    </li>
   {{/each}}
+  </ol>
 </template>
 
 <template name="story">

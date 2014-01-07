@@ -15,7 +15,7 @@ if (Meteor.isClient) {
   // Insert some sample data.
   if (! Stories.findOne()) {
     Stories.insert({
-      title: "Show HN: Snapchat for Uber",
+      title: "I didn't sleep for 30 days. Here is my story.",
       link: "http://foo.com",
       votes: 0
     });
@@ -30,7 +30,7 @@ if (Meteor.isClient) {
       votes: 0
     });
     Stories.insert({
-      title: "I failed and I loved it",
+      title: "The one MongoDB selector that will win her heart",
       link: "http://quux.com",
       votes: 0
     });
